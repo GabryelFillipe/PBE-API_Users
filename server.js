@@ -8,6 +8,8 @@ const userRoutes = require('./src/routes/userRoutes')
 //Criar uma aplucação express
 const app = express()
 
+app.use(express.json())
+
 // Definir a porta em que o servidor ira escutar
 const porta = 8000
 
@@ -23,3 +25,4 @@ app.use('/api/users' , userRoutes)
 app.listen(porta, ()=>{
     console.log(`Servidor rodando em http://localhost:${porta}`)
 })
+    

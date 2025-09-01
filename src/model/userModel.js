@@ -24,8 +24,12 @@ const findAll = () =>{
 }
 
 //Função busacar um usuário por 
-const findBytId = (id) =>{
+const findById = (id) =>{
     return users.find(user => user.id === id)
+}
+
+const findByName = (name) => {
+    return users.find(user => user.name === name)
 }
 
 //Função que adiciona um novo usuário
@@ -42,6 +46,7 @@ const create = (newUser) =>{
 //Exportar as funções
 module.exports = {
     findAll,
-    findBytId,
+    findById,
+    findByName,
     create
 }

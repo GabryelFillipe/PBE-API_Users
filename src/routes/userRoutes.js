@@ -14,10 +14,12 @@ router.get('/', userController.getAllUsers)
 
 //2º Rota para obter dados de usuarios por ID
 
-// router.get('/:id', userController.getUserById)
+router.get('/:id', userController.getUserById)
 
+//3º Rota para obter dados do usuário pelo nome
+router.get('/nome/:name', userController.getUserByName)
 
-//3º Rota para criar usuario
+//4º Rota para criar usuario
 
 router.post('/', userController.createUser)
 
