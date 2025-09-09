@@ -34,7 +34,7 @@ const findByName = (name) => {
 
 //Função que adiciona um novo usuário
 const create = (newUser) =>{
-    const newId = users.length > 0 ? users[length -1].id +1 : 1
+    const newId = users.length > 0 ? users[users.length -1].id +1 : 1
     const userWithId = {
         id: newId,
         ...newUser
